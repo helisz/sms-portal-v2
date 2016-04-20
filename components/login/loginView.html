@@ -1,0 +1,77 @@
+
+
+<div g-controller="LoginController" >
+
+    <div class="loginColumns animated fadeInDown" >
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2 class="font-bold">
+                    {{ 'Welcome to CITIC Telecom' | translate }}
+                </h2>
+
+                <p>
+                    Log in to view your profile.
+                </p>
+                <p>
+                    <small></small>
+                </p>
+
+
+
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="ibox-content">
+                    <form class="m-t" role="form" ng-submit="vm.login()" >
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="{{ 'Username' | translate }}" ng-model="vm.username" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="{{ 'Password' | translate }}" ng-model="vm.password" required="">
+                        </div>
+                        <button type="submit" ng-disabled="form.$invalid || vm.dataLoading"  class="btn btn-primary block full-width m-b">{{ 'Login' | translate }}</button>
+
+                        <p ng-if="vm.dataLoading" class="text-muted text-center">
+                            <img src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                        </p>
+
+                        <p ng-if="!vm.dataLoading" class="text-muted text-center">
+                            <small>{{flash.message}}</small>
+                        </p>
+
+                        <a href="#forgetpw">
+                            <small>
+                                {{ 'Forgot password' | translate }}?
+                            </small>
+                        </a>
+
+                        <p class="text-muted text-center">
+                            <small>
+                                {{ 'Do not have an account?' | translate }}
+                            </small>
+                        </p>
+                        <a class="btn btn-sm btn-white btn-block" href="#register"> {{ 'Sign up' | translate }} </a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pic">
+                    <img img src="img/login.jpg">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+

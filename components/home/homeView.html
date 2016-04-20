@@ -1,0 +1,40 @@
+
+
+<div id="page-top" class="index" ng-controller="homeCtrl">
+
+
+<!-- Header -->
+<header>
+    <video autoplay loop id="video-background" muted>
+        <source src="https://s3.amazonaws.com/www-assets.invisionapp.com/Homepage/enterprise-loop.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading" >
+                <translate> {{"Stronger, Faster, Smarter"}} </translate>
+            </div>
+            <div class="intro-lead-in" >
+                <translate> {{"CITIC Telecom"}} </translate>
+            </div>
+            <a href=""  class="page-scroll btn btn-xl" scroll-to="services"><div  translate="Learn more" ></div></a>
+        </div>
+    </div>
+
+</header>
+
+<!-- Product Section -->
+    <div ng-include src="'components/home/partials/product.html'"></div>
+
+<!-- Portfolio Grid Section -->
+    <div ng-include src="'components/home/partials/portfolio.html'"></div>
+
+<!-- About Section -->
+    <div ng-include src="'components/home/partials/about.html'"></div>
+
+<!-- Contact Section -->
+    <div ng-include src="'components/home/partials/contact.html'"></div>
+
+</div>
+
+

@@ -1,0 +1,49 @@
+{
+  "Learn more": "进一步了解",
+  "CITIC Telecom": "中信国际电讯",
+  "Stronger, Faster, Smarter": "更強壯、更敏捷、更聰明",
+  "CITIC is Large": "中信就是大",
+  "China Mobile": "中国移动",
+  "Product": "产品" ,
+  "Online Store":"网上商城",
+  "Use Cases": "使用案例",
+  "About": "关於我们",
+  "Contact": "联络我们",
+  "Sign up": "建立帐户",
+  "Login": "登入",
+
+  "My Account":"我的帐户",
+
+  "Logout": "登出",
+  "Service": "业务",
+  "reviews": "反响",
+  "service1": "SMS 服务",
+  "service2": "IDD 服务",
+  "service3": "DATA 服务",
+  "service4": "IDC 服务",
+  "service5": "HK Mobile 服务",
+  "service6": "购物车",
+
+  "Hello,": "你好，",
+
+  "Welcome to CITIC Telecom": "欢迎来到 CITIC Telecom",
+  "Username": "帐户名称",
+  "Password": "密码",
+  "Do not have an account?": "还未註册？",
+
+  "Create Your CITIC Telecom Account": "建立您的 CITIC Telecom 帐户",
+  "Email address": "电子邮件地址",
+  "Agree the terms and policy": "同意服务与条款",
+  "Already have an account?": "已经註册了？",
+
+
+  "Forgot password": "忘记密码",
+  "Enter your email address and your password will be reset and emailed to you.": "请输入你的电子邮件地址，你的密码将会被重置。",
+  "Send new password": "发送新密码",
+
+  "tc":"繁",
+  "sc": "简",
+  "en": "EN"
+
+
+}

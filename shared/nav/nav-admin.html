@@ -1,0 +1,74 @@
+
+<!-- navbar-right -->
+<div  >
+
+    <ul class="nav navbar-nav navbar-right"  >
+
+        <!--li><a ng-click="hideMenu()" href="smsadmin/ex.dashboard.html"-->
+        <li class="dropdown" ><a data-toggle="dropdown"  href="">
+           <translate>{{currentLang}}</translate>
+            <span class="caret"></span>
+        </a>
+            <ul class="dropdown-menu">
+                <li class="langBtns" >
+                    <a class="tc" href="" ng-click="changeLanguage('tc')" > <ANY>繁體</ANY> </a>
+                    <a href="" class="sc" ng-click="changeLanguage('sc')" >  <ANY>简体</ANY> </a>
+                    <a href=""class="en" ng-click="changeLanguage('en')" >  <ANY>English</ANY>  </a>
+                </li>
+            </ul>
+
+        </li>
+
+    </ul>
+
+
+
+    <ul class="nav navbar-nav navbar-right" ng-if="!globals.currentUser" >
+        <li><a ng-click="hideMenu()" href="#register"><span class="glyphicon glyphicon-user"></span>
+            <translate>{{"Sign up"}}</translate>
+            </a>
+        </li>
+        <li><a ng-click="hideMenu()"  href="#login"><span class="glyphicon glyphicon-log-in"></span>
+            <translate>{{"Login"}}</translate>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" ng-if="globals.currentUser" >
+        <!--li><a ng-click="hideMenu()" href="smsadmin/ex.dashboard.html"-->
+        <li class="dropdown" ><a data-toggle="dropdown"  href="">
+            <span class="glyphicon glyphicon glyphicon-user"></span>
+            <translate>{{"Hello,"}}</translate>
+            {{globals.currentUser.username}}
+            <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="smsadmin/ex.dashboard.html">
+                    <span class="glyphicon glyphicon-th-large"></span>
+                    <translate> {{"My Account"}} </translate>
+                </a>
+                </li>
+                <li><a href="#login">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                    <translate>{{"Logout"}}</translate>
+                </a></li>
+            </ul>
+
+        </li>
+
+        <!--li><a ng-click="hideMenu()" href="smsadmin/ex.dashboard.html">
+
+            <span class="glyphicon glyphicon glyphicon-shopping-cart"></span>
+            <translate>{{"Cart"}}</translate>
+        </a>
+        </li-->
+
+        <li><a ng-click="hideMenu()" href="#"><span class="glyphicon glyphicon-shopping-cart"></span>
+            <translate>{{"Cart"}}</translate>
+            </a>
+        </li>
+    </ul>
+
+
+</div>

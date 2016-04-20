@@ -1,0 +1,51 @@
+{
+  "Learn more": "Learn more",
+  "CITIC Telecom": "CITIC Telecom",
+  "Stronger, Faster, Smarter": "Stronger, Faster, Smarter",
+  "CITIC is Large": "CITIC is Large",
+  "China Mobile": "China Mobile",
+  "Product": "Product" ,
+  "Online Store":"Online Store",
+  "Use Cases": "Use Cases",
+  "About": "About",
+  "Contact": "Contact",
+  "Sign up": "Sign up",
+  "Login": "Login",
+
+  "My Account":"MyAccount",
+
+  "Logout": "Logout",
+  "Service": "Service",
+  "reviews": "reviews",
+  "service1": "SMS Service",
+  "service2": "IDD Service",
+  "service3": "DATA Service",
+  "service4": "IDC Service",
+  "service5": "HK Mobile Service",
+  "service6": "Shopping Cart",
+
+  "Hello": "Hello,",
+
+
+  "Welcome to CITIC Telecom": "Welcome to CITIC Telecom",
+  "Username":  "Username",
+  "Password": "Password",
+  "Do not have an account?":  "Do not have an account?",
+
+  "Create Your CITIC Telecom Account": "Create Your CITIC Telecom Account",
+  "Email address":  "Email address",
+  "Agree the terms and policy":  "Agree the terms and policy",
+  "Already have an account?": "Already have an account?",
+
+
+  "Forgot password": "Forget password",
+  "Enter your email address and your password will be reset and emailed to you.":  "Enter your email address and your password will be reset and emailed to you.",
+  "Send new password": "Send new password",
+
+
+  "tc":"繁",
+  "sc": "简",
+  "en": "EN"
+
+
+}
