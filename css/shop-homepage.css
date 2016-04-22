@@ -1,46 +1,519 @@
 /*!
- * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+* Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+.subheader{
+}
+
+h2.subheader-header{
+   font-family: 'Open Sans',  FontAwesome,Arial,sans-serif;
+   font-weight: 300;
+   font-size: 1.6em;
+   margin-top: 20px;
+   padding-left: 20px;
+   border-left: 8px solid #1F518C;
+}
+
+.subheader .search{
+   border-radius: 100px;
+   margin-top: 16px;
+   width: 100%;
+}
+.subheader hr.fill{
+   margin-left: -20px;
+   margin-right: -20px;
+}
+.filter-title{
+   line-height: 40px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #AAA;
+   text-transform: uppercase;
+}
+ul.filter-links{
+   list-style: none;
+   padding: 0;
+}
+ul.filter-links li{
+   display: inline-block;
+}
+ul.filter-links li a{
+   color: #6b757c;
+   text-decoration: none;
+   display: block;
+   height: 40px;
+   padding: 0 15px;
+   line-height:40px;
+   font-size: 14px;
+}
+
+ul.filter-links li a:hover{
+   color: #cb2b2f;
+   background: #F9F9F9;
+}
+
+.store {
+   padding-top: 140px;
+}
+
+.sidenav-category{
+   background: white;
+   margin-bottom: 20px;
+}
+
+.sidenav-category .sub-cate{
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-size: 16px;
+   padding: 16px 20px;
+   z-index: 10;
+   position: relative;
+}
+.sidenav-category .sub-cate-title{
+   font-size: 12px;
+   font-weight: bold;
+   padding: 16px 20px 10px 20px;
+   color: #CCC;
+   text-transform: uppercase;
+}
+.sidenav-category ul.nav > li > a{
+   color: #6b757c;
+   font-size: 14px;
+   width: 100%;
+   padding: 14px 20px;
+}
+.sidenav-category ul.nav > li > a.active,
+.sidenav-category ul.nav > li > a:hover,
+.sidenav-category ul.nav > li > a:focus{
+   border-left: 3px solid #1F518C;
+   color: #1F518C;
+   background: #E8F2F9;
+   transition: all ease 0.1s;
+   -webkit-transition: all ease 0.1s;
+   -moz-transition: all ease 0.1s;
+}
+
+
+.product .thumbnail{
+   overflow: hidden;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product .thumbnail{
+   border-radius: 0px;
+}
+.product,
+.product:hover,
+.product:hover *{
+   text-decoration: none!important;
+}
+.product:hover .thumbnail{
+   box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+.product img{
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product:hover img{
+   transform: scale(1.05);
+}
+.product .caption{
+   padding: 20px 15px;
+   height: 150px;
+   overflow: hidden;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product .price{
+   font-weight: 400;
+   padding: 0;
+   margin: 0;
+   color: #6b757c;
+}
+.product .type{
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #AAA;
+}
+.product .name{
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: #00BEF1;
+}
+.product:hover .caption{
+   background: #F4F6FB;
+}
+.product .desc{
+   color: #6b757c;
+   font-size: 12px;
+   line-height: 20px;
+   height: 40px;
+   overflow: hidden;
+}
+.sidenav-product{
+   color: #6b757c;
+   display: block;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+
+.sidenav-product:hover{
+   border-left: 3px solid #00BEF1;
+}
+
+.sidenav-product,
+.sidenav-product:hover,
+.sidenav-product:hover *{
+   text-decoration: none!important;
+}
+.sidenav-product img{
+   width: 80px;
+   height: auto;
+   float: left;
+}
+.sidenav-product .content{
+   padding: 10px 15px 10px 90px;
+}
+
+.sidenav-product .price{
+   font-size: 15px;
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-weight: 400;
+}
+.sidenav-product:hover .price{
+   color: #6b757c;
+}
+.sidenav-product .type{
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #AAA;
+}
+.sidenav-product .name{
+   font-size: 12px;
+   font-family: 'Montserrat', Arial, sans-serif;
+   color: #00BEF1;
+}
+
+
+
+/******* PRODUCT ********/
+
+.product-detail{
+   font-size: 14px;
+   padding: 20px 40px;
+}
+.product-detail h2{
+   font-weight: 400;
+}
+
+.product-detail .product-main-price{
+   font-size: 3em;
+   font-family: 'Open Sans',  FontAwesome,Arial,sans-serif;
+   font-weight: 400;
+}
+
+
+
+.thumbnail{
+   border: 0;
+}
 
 .slide-image {
-    width: 100%;
+   width: 100%;
 }
 
 .carousel-holder {
-    margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .carousel-control,
 .item {
-    border-radius: 4px;
+   border-radius: 4px;
 }
 
 .caption {
-    height: 130px;
-    overflow: hidden;
+   height: 70px;
+   overflow: hidden;
 }
 
 .caption h4 {
-    white-space: nowrap;
+   white-space: nowrap;
 }
 
 .thumbnail img {
-    width: 100%;
+   width: 100%;
 }
 
 .ratings {
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #d17581;
+   padding-right: 10px;
+   padding-left: 10px;
+   color: #d17581;
 }
 
 .thumbnail {
-    padding: 0;
+   padding: 0;
 }
 
 .thumbnail .caption-full {
-    padding: 9px;
-    color: #333;
+   padding: 9px;
+   color: #333;
+}
+/*!
+* Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+
+.subheader{
+   background: white;
+   margin-bottom: 20px;
+   padding: 10px 20px;
+}
+
+h2.subheader-header{
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-weight: 400;
+   font-size: 1.6em;
+   margin-top: 20px;
+}
+
+.subheader .search{
+   border-radius: 100px;
+   margin-top: 16px;
+   width: 100%;
+
+}
+
+ul.service-subnav{
+   list-style: none;
+   padding: 0;
+}
+ul.service-subnav li{
+   display: inline-block;
+}
+ul.service-subnav li a{
+   color: #6b757c;
+   text-decoration: none;
+   display: block;
+   height: 60px;
+   padding: 0 15px;
+   line-height:64px;
+   font-size: 14px;
+}
+
+ul.service-subnav li a:hover{
+   color: #cb2b2f;
+   border-bottom: 2px solid  #cb2b2f;
+   height: 60px;
+   background: #F9F9F9;
+}
+
+.store {
+   padding-top: 80px;
+}
+
+.sidenav-category{
+   background: white;
+   margin-bottom: 20px;
+}
+.sidenav-category a.more{
+   width: 100%;
+   display: block;
+   font-size: 12px;
+   text-align: center;
+   padding: 10px 0px;
+   border-top: 1px solid rgb(238, 238, 238);
+   color: rgb(107, 117, 124);
+   font-weight: bold;
+   font-family: 'Montserrat', Arial, sans-serif;
+}
+.sidenav-category a.more:hover{
+   text-decoration: none;
+   background: #E8F2F9;
+}
+.sidenav-category .sub-cate{
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-size: 16px;
+   padding: 16px 20px;
+   z-index: 10;
+   position: relative;
+}
+.sidenav-category .sub-cate-title{
+   font-size: 12px;
+   font-weight: bold;
+   padding: 16px 20px 10px 20px;
+   color: #CCC;
+   text-transform: uppercase;
+}
+.sidenav-category ul.nav > li > a{
+   color: #6b757c;
+   font-size: 14px;
+   width: 100%;
+   padding: 14px 20px;
+}
+.sidenav-category ul.nav > li > a.active,
+.sidenav-category ul.nav > li > a:hover,
+.sidenav-category ul.nav > li > a:focus{
+   border-left: 3px solid #1F518C;
+   color: #1F518C;
+   background: #E8F2F9;
+   transition: all ease 0.1s;
+   -webkit-transition: all ease 0.1s;
+   -moz-transition: all ease 0.1s;
+}
+
+
+.product .thumbnail{
+   overflow: hidden;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product .thumbnail{
+   border-radius: 0px;
+}
+.product,
+.product:hover,
+.product:hover *{
+   text-decoration: none!important;
+}
+.product:hover .thumbnail{
+   box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+.product img{
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product:hover img{
+   transform: scale(1.05);
+}
+.product .caption{
+   padding: 20px 15px;
+   height: 150px;
+   overflow: hidden;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+.product .price{
+   font-weight: 400;
+   padding: 0;
+   margin: 0;
+   color: #6b757c;
+}
+.product .type{
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #AAA;
+}
+.product .name{
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: #00BEF1;
+}
+.product:hover .caption{
+   background: #F4F6FB;
+}
+.product .desc{
+   color: #6b757c;
+   font-size: 12px;
+   line-height: 20px;
+   height: 40px;
+   overflow: hidden;
+}
+.sidenav-product{
+   color: #6b757c;
+   display: block;
+   transition: all ease 0.3s;
+   -webkit-transition: all ease 0.3s;
+   -moz-transition: all ease 0.3s;
+}
+
+.sidenav-product:hover{
+   border-left: 3px solid #00BEF1;
+}
+
+.sidenav-product,
+.sidenav-product:hover,
+.sidenav-product:hover *{
+   text-decoration: none!important;
+}
+.sidenav-product img{
+   width: 80px;
+   height: auto;
+   float: left;
+}
+.sidenav-product .content{
+   padding: 10px 15px 10px 90px;
+}
+
+.sidenav-product .price{
+   font-size: 15px;
+   font-family: 'Montserrat', Arial, sans-serif;
+   font-weight: 400;
+}
+.sidenav-product .type{
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #AAA;
+}
+.sidenav-product .name{
+   font-size: 12px;
+   font-family: 'Montserrat', Arial, sans-serif;
+   color: #00BEF1;
+}
+
+
+
+
+.thumbnail{
+   border: 0;
+}
+
+.slide-image {
+   width: 100%;
+}
+
+.carousel-holder {
+   margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+   border-radius: 4px;
+}
+
+.caption {
+   height: 130px;
+   overflow: hidden;
+}
+
+.caption h4 {
+   white-space: nowrap;
+}
+
+.thumbnail img {
+   width: 100%;
+}
+
+.ratings {
+   padding-right: 10px;
+   padding-left: 10px;
+   color: #d17581;
+}
+
+.thumbnail {
+   padding: 0;
+}
+
+.thumbnail .caption-full {
+   padding: 9px;
+   color: #333;
 }

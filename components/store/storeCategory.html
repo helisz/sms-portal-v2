@@ -1,0 +1,137 @@
+<link href="css/shop-homepage.css" rel="stylesheet">
+
+<script src="components/store/jq.js"></script>
+
+<!-- Page Content -->
+
+<div id="store" class="store container" ng-controller="storeCtrl" >
+
+   <div class="row">
+	  <div  class="col-md-3" >
+
+		 <div class="sidenav-category paper" >
+			<div class="sub-cate paper">Categories</div>
+			<div class="sub-cate-title">Services</div>
+			<ul class="nav nav-sidebar">
+			   <li ng-repeat="servicenav in servicenavs" ng-if="servicenav.title == 'services'">
+				  <a href="{{servicenav.url}}">
+					 <i class="fa {{servicenav.icon}}"></i>&nbsp;&nbsp;&nbsp;
+					 {{servicenav.name}}
+				  </a>
+			   </li>
+			</ul>
+			<div class="sub-cate-title">Others</div>
+			<ul class="nav nav-sidebar">
+			   <li ng-repeat="servicenav in servicenavs" ng-if="servicenav.title == 'others'">
+				  <a href="{{servicenav.url}}">
+					 <i class="fa {{servicenav.icon}}"></i>&nbsp;&nbsp;&nbsp;
+					 {{servicenav.name}}
+				  </a>
+			   </li>
+			</ul>
+		 </div>
+
+		 <div class="sidenav-category paper" >
+			<div class="sub-cate paper">Related Services</div>
+			<a href="#/store/sms/product" class="sidenav-product clearfix" ng-repeat="product in products" ng-if="product.region != 'cn'">
+			   <img src="{{product.pic}}" alt="">
+			   <div class="content">
+				  <small class="type" href="#">{{product.type}}</small>
+				  <div class="name">
+					 {{product.name}}
+				  </div>
+				  <div class="price">${{product.price}}</div>
+			   </div>
+			</a>
+			<a href="#/store" class="more">MORE</a>
+		 </div>
+
+	  </div>
+
+
+	  
+	  <div class="col-md-9 animated fadeInDown">
+		<!-- Carousel -->
+		 <div class="row">
+			<div class="col-sm-12">
+
+			   <div class="subheader paper">
+				  <div class="row subheader-title">
+					 <div class="col-sm-9">
+						<h2 class="subheader-header">SMS Service</h2>
+					 </div>
+
+					 <div class="col-sm-3">
+						<input class="search form-control" type="text" placeholder="Search">
+					 </div>
+				  </div>
+				<hr class="fill">
+				  <div class="row">
+					 <div class="filter-title col-xs-12 col-sm-2">
+							Areas
+					 </div>
+					 <div class="col-xs-12 col-sm-10">
+						<ul class="filter-links">
+						   <li ng-repeat="area in areas">
+							  <a href="#/store/sms">{{area.name}}</a>
+						   </li>
+						</ul>
+					 </div>
+				  </div>
+				  <div class="row">
+					 <div class="filter-title col-xs-12 col-sm-2">
+							Country
+					 </div>
+					 <div class="col-xs-12 col-sm-10">
+						<ul class="filter-links">
+						   <li ng-repeat="country in countries">
+							  <a href="#/store/sms">{{country.name}}</a>
+						   </li>
+						</ul>
+					 </div>
+				  </div>
+				  <div class="row">
+					 <div class="filter-title col-xs-12 col-sm-2">
+							Price Range
+					 </div>
+					 <div class="col-xs-12 col-sm-10">
+						<ul class="filter-links">
+						   <li ng-repeat="price in prices">
+							  <a href="#/store/sms">{{price.name}}</a>
+						   </li>
+						</ul>
+					 </div>
+				  </div>
+			   </div>
+			</div>
+		 </div>
+		
+
+		 <!-- Products -->
+		 <div class="row">
+
+			<a href="#/store/sms/product" ng-repeat="product in products" class="product col-sm-4 col-lg-4 col-md-4">
+			   <div class="thumbnail paper">
+				  <img src="{{product.pic}}" alt="">
+				  <div class="caption">
+					 <h4 class="price pull-right">${{product.price}}</h4>
+					 <small class="type" href="#">{{product.type}}</small>
+					 <h4 class="name">
+						{{product.name}}
+					 </h4>
+					 <p class="desc"> {{product.desc}} </p>
+				  </div>
+			   </div>
+			</a>
+
+		 </div>
+
+	  </div>
+
+
+  
+   </div>
+
+</div>
+<!-- /.container -->
+

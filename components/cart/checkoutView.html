@@ -1,0 +1,249 @@
+<link href="css/shop-homepage.css" rel="stylesheet">
+
+<script src="components/store/jq.js"></script>
+
+<!-- Page Content -->
+
+<div id="store" class="store container" ng-controller="storeCtrl" >
+
+	<div class="row">
+		<div class="col-md-12 animated fadeInDown">
+			<h1>Checkout</h1>
+			<div class="row">
+				<div class="col-md-9">
+
+					<div class="paper ibox cart-item">
+						<div class="ibox-title paper">
+							<span class="pull-right">(<strong>2</strong>) items</span>
+							Items in your cart
+						</div>
+						<!-- Item -->
+						<div class="ibox-content">
+							<div class="table-responsive">
+								<table class="shoping-cart-table">
+
+									<tbody>
+										<tr>
+											<td width="90">
+												<img src="img/cn1.jpg" alt="" style="width: 100px; height: auto">
+											</td>
+											<td class="desc">
+												<h3>
+													<a href="#/store/sms/product" class="text-navy">
+														China SMS [5000 Plan]
+													</a>
+												</h3>
+												<p class="small">
+													Contain 5000 Message. Vivamus suscipit tortor eget felis porttitor volutpat
+												</p>
+											</td>
+
+											<td>
+												$10.00
+											</td>
+											<td width="65">
+												<input class="form-control" placeholder="1" type="text">
+											</td>
+											<td>
+												<h4>
+													$10,00
+												</h4>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- Item -->
+						<div class="ibox-content">
+							<div class="table-responsive">
+								<table class="shoping-cart-table">
+
+									<tbody>
+										<tr>
+											<td width="90">
+												<img src="img/cn2.jpg" alt="" style="width: 100px; height: auto">
+											</td>
+											<td class="desc">
+												<h3>
+													<a href="#/store/sms/product" class="text-navy">
+														China SMS [10000 Plan]
+													</a>
+												</h3>
+												<p class="small">
+													Contain 10000 Message. Vivamus suscipit tortor eget felis porttitor volutpat
+												</p>
+											</td>
+
+											<td>
+												$20.00
+											</td>
+											<td width="65">
+												<input class="form-control" placeholder="2" type="text">
+											</td>
+											<td>
+												<h4>
+													$40,00
+												</h4>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="paper ibox">
+						<div class="ibox-title paper">
+							Payment method
+						</div>
+						<div class="ibox-content">
+
+							<div class="panel-group payments-method" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<div class="pull-right">
+											<i class="fa fa-cc-paypal text-success"></i>
+										</div>
+										<div class="panel-title">
+											<small data-toggle="collapse" data-parent="#accordion">PayPal</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<div class="pull-right">
+											<i class="fa fa-cc-amex text-success"></i>
+											<i class="fa fa-cc-mastercard text-warning"></i>
+											<i class="fa fa-cc-discover text-danger"></i>
+										</div>
+										<div class="panel-title">
+											<small data-toggle="collapse" data-parent="#accordion">Credit Card</small>
+										</div>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse in">
+										<div class="panel-body">
+
+											<div class="row">
+												<div class="col-md-12">
+													<h2>Summary</h2>
+													<strong>Product:</strong>: Name of product <br>
+													<strong>Price:</strong>: <span class="text-navy">$452.90</span>
+
+													<p class="m-t">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+														eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+														enim ad minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.
+
+													</p>
+												</div>
+												<div class="col-md-12">
+													<hr>
+												</div>
+												<div class="col-md-12">
+
+													<form role="form" id="payment-form">
+														<div class="row">
+															<div class="col-xs-12">
+																<div class="form-group">
+																	<label>CARD NUMBER</label>
+																	<div class="input-group">
+																		<input class="form-control" name="Number" placeholder="Valid Card Number" required="" type="text">
+																		<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-7 col-md-7">
+																<div class="form-group">
+																	<label>EXPIRATION DATE</label>
+																	<input class="form-control" name="Expiry" placeholder="MM / YY" required="" type="text">
+																</div>
+															</div>
+															<div class="col-xs-5 col-md-5 pull-right">
+																<div class="form-group">
+																	<label>CV CODE</label>
+																	<input class="form-control" name="CVC" placeholder="CVC" required="" type="text">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12">
+																<div class="form-group">
+																	<label>NAME OF CARD</label>
+																	<input class="form-control" name="nameCard" placeholder="NAME AND SURNAME" type="text">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12">
+																<a href="#/checkoutSuccess" class="btn btn-primary" type="submit">Make a payment!</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="col-md-3">
+
+					<div class="ibox paper">
+						<div class="ibox-title paper">
+							Cart Summary
+						</div>
+						<div class="ibox-content">
+							<span>
+								Total
+							</span>
+							<h2 class="font-bold">
+								$50.00
+							</h2>
+
+							<span class="text-muted small">
+								*For United States, France and Germany applicable sales tax will be applied
+							</span>
+						</div>
+					</div>
+
+					<div class="paper ibox">
+						<div class="ibox-title paper">
+							Support
+						</div>
+						<div class="ibox-content text-center">
+
+							<h3><i class="icon-phone"></i> +852 8888 6666</h3>
+							<span class="small">
+								Please contact with us if you have any questions. We are avalible 24h.
+							</span>
+
+
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+</div>
+
+<!-- /.container -->
+

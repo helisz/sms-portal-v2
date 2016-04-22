@@ -64,8 +64,9 @@
         </a>
         </li-->
 
-        <li><a ng-click="hideMenu()" href="#"><span class="glyphicon glyphicon-shopping-cart"></span>
+        <li><a ng-click="hideMenu()" href="#/cart"><span class="glyphicon glyphicon-shopping-cart"></span>
             <translate>{{"Cart"}}</translate>
+            <span class="cart-num" ng-show="cartnumber">{{cartnumber}}</span>
             </a>
         </li>
     </ul>

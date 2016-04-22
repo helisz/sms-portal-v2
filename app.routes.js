@@ -10,6 +10,32 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         templateUrl: 'components/store/storeView.html',
         controller: 'storeCtrl'
     });
+	
+	$routeProvider.when('/store/sms', {
+        templateUrl: 'components/store/storeCategory.html',
+        controller: 'storeCtrl'
+    });
+	
+	$routeProvider.when('/store/sms/product', {
+        templateUrl: 'components/store/storeProduct.html',
+        controller: 'storeCtrl'
+    });
+	
+	$routeProvider.when('/cart', {
+        templateUrl: 'components/cart/cartView.html',
+        controller: 'storeCtrl'
+    });
+	
+		
+	$routeProvider.when('/checkout', {
+        templateUrl: 'components/cart/checkoutView.html',
+        controller: 'storeCtrl'
+    });
+
+	$routeProvider.when('/checkoutSuccess', {
+        templateUrl: 'components/cart/checkoutSuccess.html',
+        controller: 'storeCtrl'
+    });
 
     $routeProvider.when('/doc', {
         templateUrl: 'components/doc/docView.html',
